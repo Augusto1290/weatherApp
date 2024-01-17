@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/weather.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <main id="app">
+      <div class="card">
+        <section class="search">
+          <input type="search" class="search-bar" placeholder="Search" />
+          <button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+              width="1.5em"
+              height="1.5em"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+              />
+            </svg>
+          </button>
+        </section>
+        <section class="weather loading">
+          <h2 class="city">Weather in Buenos Aires</h2>
+          <h1 class="temp">27 °C</h1>
+          <div class="icon-container">
+            <img
+              src="http://cdn.weatherapi.com/weather/64x64/night/122.png"
+              alt=""
+              class="icon"
+            />
+            <div class="description">Cloudy</div>
+          </div>
+          <div class="humidity">Humidity: 60%</div>
+          <div class="wind">Wind speed: 6.2 km/h</div>
+        </section>
+      </div>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
